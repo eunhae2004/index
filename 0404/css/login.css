@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* 메인 스타일 */
+body {
+  font-family: "Pretendard-Regular";
+  background-image: url(./roaD.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 폼 중앙정렬 */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+main {
+  max-width: 1000px;
+  margin: 100px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select,
+textarea,
+button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* 가입하기 버튼 */
+button {
+  background-color: rgb(238, 149, 48);
+  color: rgb(252, 252, 252);
+  font-weight: bolder;
+  font-size: large;
+}
+
+button:hover {
+  background-color: darkgoldenrod;
+  color: darkred;
+}

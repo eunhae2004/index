@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chosunilbo_myungjo";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Paperlogy-8ExtraBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Boldonse";
+  src: url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "GongGothicMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+    format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* 프로필-인적사항 표 */
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: lightblue;
+}
+
+td {
+  background-color: white;
+}
+/* 기본 폰트 */
+body {
+  font-family: "Pretendard-Regular";
+  line-height: 1;
+}
+
+/* 이력서 영어/한국어 제목 */
+#ENname {
+  font-family: "Boldonse";
+}
+#KOname {
+  font-family: "Chosunilbo_myungjo";
+  line-height: normal;
+}
+
+/* 소제목들 */
+h2 {
+  font-family: "GongGothicMedium";
+  line-height: normal;
+  font-size: large;
+}
+
+/* 구성요소 디자인 */
+/* 이력서 제목 */
+header {
+  background-color: rgb(164, 206, 255);
+  padding: 10px;
+  text-align: center;
+}
+
+/* 메인 */
+main {
+  /* 그리드 할당 */
+  background-color: antiquewhite;
+  display: grid;
+  grid-template-areas:
+    "img aside"
+    "proffile proffile";
+
+  grid-template-columns: 3fr 4fr;
+  gap: 10px;
+}
+
+/* 프로필 이미지 */
+img {
+  width: 100%;
+  height: auto;
+  grid-area: "img";
+}
+
+/* 경력, 자기소개 */
+aside {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  grid-area: "aside";
+}
+
+/* 프로필 표 (그리드 할당용) */
+#proffile {
+  grid-area: "proffile";
+}
+
+/* 푸터 */
+footer {
+  background-color: rgb(227, 244, 255);
+  padding: 10px;
+  text-align: center;
+  color: rgb(59, 132, 165);
+}

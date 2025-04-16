@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Chosunilbo_myungjo";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Paperlogy-8ExtraBold";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-3@1.0/Paperlogy-8ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Boldonse";
+  src: url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: "GongGothicMedium";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff")
+    format("woff");
+  font-weight: lighter;
+  font-style: normal;
+}
+
+/* --------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard-Regular";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(238, 237, 236);
+}
+
+/* 헤더 스타일 */
+header {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(109, 97, 92);
+}
+
+h1 {
+  font-size: 60px;
+  font-family: "Paperlogy-8ExtraBold";
+  color: rgb(255, 255, 255);
+}
+
+header > p {
+  font-size: 20px;
+  color: antiquewhite;
+}
+
+/* 메인 스타일 */
+
+/* 리스트 내용 */
+.list {
+  width: 100%;
+}
+
+.list > .restaurant {
+  height: 600px;
+
+  border: 1px solid rgb(199, 124, 63);
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+}
+
+.resimg {
+  position: absolute;
+  top: 10px;
+  width: 95%;
+  height: 50%;
+  margin: 5px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 30px;
+  color: rgb(114, 15, 8);
+  position: absolute;
+  top: 300px;
+}
+
+.info {
+  font-size: 20px;
+  position: absolute;
+  top: 360px;
+  margin: 20px 40px;
+}
+
+/* 리스트 배치 - 모바일 */
+.one,
+.two,
+.three,
+.four {
+  width: 90%;
+  margin: 10px;
+}
+
+/* 태블릿 */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 45%;
+  }
+}
+
+/* PC */
+@media (min-width: 1024px) {
+  .list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .one,
+  .two,
+  .three,
+  .four {
+    width: 23%;
+  }
+}
+
+/* 푸터 */
+
+footer {
+  width: 100%;
+  background-color: rgb(75, 71, 69);
+  height: 100px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+}

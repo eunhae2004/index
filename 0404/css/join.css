@@ -1,0 +1,124 @@
+/* 고정된 도움말 버튼 구현 */
+
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+.fixed-info {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: rgb(208, 219, 228);
+  color: rgb(6, 19, 44);
+  padding: 30px 30px;
+  border-radius: 100%;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.fixed-info:hover {
+  background-color: rgb(158, 187, 212);
+  color: white;
+}
+
+/* 메인 스타일 */
+body {
+  font-family: "Pretendard-Regular";
+  background-image: url(./roaD.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 폼 중앙정렬 */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+
+main {
+  max-width: 1000px;
+  margin: 100px auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label,
+p {
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+input,
+select,
+textarea,
+button {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="radio"] input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* 주민등록번호 */
+#ssn-group {
+  display: flex;
+  margin: 0 auto;
+}
+
+.ssn {
+  width: 40%;
+  margin-right: 10px;
+}
+
+/* 주민등록번호 검증 버튼 */
+#ssnTest {
+  width: 200px;
+}
+#ssnTest:hover {
+  background-color: #afafaf;
+  color: #fff;
+}
+
+/* 가입하기 버튼 */
+#sub {
+  background-color: rgb(238, 149, 48);
+  color: rgb(252, 252, 252);
+  font-weight: bolder;
+  font-size: large;
+}
+
+button#sub:hover {
+  background-color: darkgoldenrod;
+  color: darkred;
+}
+
+hr {
+  margin: 20px 0;
+}
